@@ -1,0 +1,8 @@
+# TODO: pin as needed
+name: protein-llms
+channels: [conda-forge, pytorch, nvidia]
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - -e .

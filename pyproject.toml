@@ -1,0 +1,10 @@
+# TODO: fill in metadata/deps later
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "protein-interaction-with-llms"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = []

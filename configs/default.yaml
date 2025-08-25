@@ -1,0 +1,5 @@
+# TODO: default project config
+project:
+  name: protein-interaction-with-llms
+  seed: 42
+  output_dir: outputs
