@@ -11,10 +11,7 @@ This project focuses on predicting protein–protein interactions (PPIs) using l
 The following backbone models are being evaluated:
 
 1. **ESM-2** – Evolutionary scale modeling trained on large protein sequence datasets, effective in capturing functional and structural properties.  
-2. **LLaMA-3 (adapted)** – Adapted from a general-purpose LLM for biological sequence understanding.  
-3. **ProtBERT** – A BERT variant specialized for protein sequences, leveraging deep transformer architectures.  
-4. **BERT (baseline)** – A general NLP transformer model, included as a baseline to evaluate the benefits of protein-specific pretraining.  
-
+2. **ProtBERT** – A BERT variant specialized for protein sequences, leveraging deep transformer architectures
 ---
 
 ## Input Channels
@@ -31,9 +28,8 @@ To account for the complex nature of PPIs, the architecture integrates several c
 ## Datasets
 Multiple datasets will be used to support training, validation, and benchmarking:
 
-- **Target–Malaria Dataset (curated)** – Contains aligned pairs of human protein targets and Plasmodium falciparum homologs, enriched with ligand-binding information and Cα structural coordinates.  
-- **UniProt** – Source of annotated protein sequences and metadata to provide biological context.  
-- **PINDER Dataset** – A comprehensive benchmark dataset specifically designed for protein–protein interaction prediction. PINDER provides standardized, high-quality interaction pairs with curated labels, making it suitable for evaluating generalization and benchmarking against existing approaches.  
+- **RCSB Sequential Dataset (curated)** –  Source of annotated protein sequences and metadata to provide biological context.
+- **PINDER Dataset** – A benchmark dataset designed specifically for PPI prediction. PINDER provides standardized, high-quality interaction pairs with curated labels, making it suitable for evaluating generalization and benchmarking against existing approaches.  
 - **Structural Data (PDB, AlphaFold)** – Used to extract 3D coordinates, solvent accessibility (SASA), and structural alignment features.  
 
 ---
@@ -55,6 +51,6 @@ Multiple datasets will be used to support training, validation, and benchmarking
 - **Performance Optimization** – Mixed precision training, quantization, and parameter-efficient fine-tuning (LoRA/PEFT).  
 
 ---
+## Disclaimer
 
-## Repository Structure
-
+This repository reflects ongoing research and development. All components, including models, datasets, and methodologies, are subject to revision as the project evolves. The material presented here provides a high-level overview of our current direction rather than a finalized implementation. Further details and updates will be added as the work progresses.
